@@ -19,7 +19,7 @@ for row in datareader:
         row[4] = row[4][ll:]
     if row[3] == "Tokens" and "0x" not in row[4] and row[4].lower() == row[4] and row[4] not in tokens and row[4] not in unmatchedTokens:
         symbol = next((x for x in r if x["id"]==row[4]), None)
-        if symbol == None:
+        if symbol is None:
             print(row[4])
             unmatchedTokens.add(row[4])
         else:
