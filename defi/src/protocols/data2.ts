@@ -1,7 +1,7 @@
 import type { Protocol } from './types'
 import { baseIconsUrl } from "../constants";
 import { getTimestamp } from '@defillama/sdk/build/util';
-
+use constant
 /*
 {
   id: string;
